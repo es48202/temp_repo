@@ -76,6 +76,6 @@ app.locals.PROD_MODE = 'production' === app.get('env');
 if (app.locals.PROD_MODE)
   console.log(`app is running in production`);
 else
-  console.log(`app is running in development ${app.get('env')}`);
+  console.log(`app is running in ${app.get('env')}`);
 
 export {app};
