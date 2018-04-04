@@ -15,4 +15,16 @@ router.get('/about', (req, res) => {
 	res.render('about', { title: 'About Us' });
 });
 
+router.get('/contact', (req, res) => {
+	res.render('contact', { title: 'Contact Us' });
+});
+
+router.get('/data', (req, res) => {
+	res.render('data', { title: 'Data' });
+});
+
+router.get('/dashboard', (req, res) => {
+	res.render('dashboard', { title: 'Dashboard' });
+});
+
 export default router;

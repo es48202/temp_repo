@@ -25,21 +25,25 @@
   <script scr="https://npmcdn.com/angular2@2.0.0-beta.21/es6/dev/src/testing/shims_for_IE.js"></script> -->
   {{{block 'customCSS' }}}
   <!-- Custom styles for this template -->
+
   <!--Google analytics-->
   <!--
   analytics script goes here
   -->
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!--Header-->
   {{> header }}
   {{{ body }}}
   {{> footer }}
   <!--footer-->
   <!-- Bootstrap core JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+
   <!-- Placed at the end of the document so the pages load faster -->
   <!-- Latest compiled and minified JavaScript -->
   {{{block 'scripts' }}}
