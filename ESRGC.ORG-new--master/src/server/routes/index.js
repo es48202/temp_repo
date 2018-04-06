@@ -2,6 +2,8 @@ import express from 'express';
 
 var router = express.Router();
 
+import photos from './photos';
+
 /* GET home page (dashboard page). */
 router.get('/', (req, res) => {
 	res.redirect('index');
@@ -26,5 +28,7 @@ router.get('/data', (req, res) => {
 router.get('/dashboard', (req, res) => {
 	res.render('dashboard', { title: 'Dashboard' });
 });
+
+router.get('/photos', photos.list);
 
 export default router;
